@@ -1,16 +1,14 @@
-
-
-import {Lesson} from "./lesson";
+import {Lesson} from './lesson';
 
 export const testLessons: Lesson[] = [
     {
         id: 1,
-        description: ' Setting Up an Angular Development Environment',
+        description: 'Setting Up an Angular Development Environment',
         duration: '5:00'
     },
     {
         id: 2,
-        description: ' Running the the Lessons Code',
+        description: 'Running the the Lessons Code',
         duration: '7:00'
     },
     {

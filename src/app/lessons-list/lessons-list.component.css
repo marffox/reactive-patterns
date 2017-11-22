@@ -1,7 +1,25 @@
-
-
 table {
-    max-width: 300px;
+    max-width: 500px;
     margin: 0 auto 30px auto;
     padding: 0 10px;
+}
+
+table td {
+  border: none;
+  text-align: left;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eceeef;
+}
+
+.duration {
+  padding: 8px;
+}
+
+.lesson-title {
+  width: 100%;
 }

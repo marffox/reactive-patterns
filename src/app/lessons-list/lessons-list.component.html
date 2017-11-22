@@ -1,16 +1,18 @@
 <table class="table lessons-list card card-strong">
-    <tbody>
+  <tbody>
     <tr *ngFor="let lesson of lessons">
-        <td class="viewed">
-            <input type="checkbox" (click)="toggleLessonViewed(lesson)">
-        </td>
-        <td class="lesson-title" [ngClass]="{'lesson-viewed':lesson.completed}">
-            {{ lesson.description }}
-        </td>
-        <td class="duration">
-            <button class="button button-highlight"
-                    (click)="delete(lesson)">X</button>
-        </td>
+      <td class="viewed">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" [checked]="lesson.completed" (click)="toggleLessonViewed(lesson)">
+            <span class="custom-control-indicator"></span>
+          </label>
+      </td>
+      <td class="lesson-title" [ngClass]="{'lesson-viewed':lesson.completed}">
+        {{ lesson.description }}
+      </td>
+      <td class="duration">
+        <button class="btn btn-danger" (click)="delete(lesson)">X</button>
+      </td>
     </tr>
-    </tbody>
+  </tbody>
 </table>
